@@ -1,0 +1,450 @@
+/* Reglas básicas de CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #9acd32;
+    color: #131212;
+    padding: 1rem;
+}
+
+
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 12002px;
+    margin: 12px auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    margin-right: 0; /* Ajusta el espacio entre el título y el menú de navegación */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+button {
+    background-color: hsl(106, 67%, 41%);
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #8c8c8c;
+}
+
+/* Estilos de la sección Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero-text h3 {
+    font-size: 1.5rem;
+    color: #9acd32;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.hero-image img {
+    max-width: 750px;
+    border-radius: 40px;
+    border: 5px solid #9acd32; /* Añade un borde de color verde */
+}
+
+/* Estilos de la sección Aplicaciones */
+.applications {
+    background-color: #1e1e1e;
+    color: #9acd32;
+
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.applications h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.stat {
+    margin: 0 1rem;
+}
+
+.stat h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.stat p {
+    margin: 0;
+}
+
+/* Estilos de la sección Grid */
+.grid {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.grid h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.grid p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-items: center; /* Centra las imágenes en las celdas */
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos de la sección Contacto */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12rem;
+    background-color: #9acd32;
+}
+
+.contact-info {
+    max-width: 50%;
+    color: #fff;
+}
+
+.contact-info h2 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #000;
+}
+
+.contact-form {
+    max-width: 50%;
+    color: #fff;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.contact-form p {
+    font-size: 1rem;
+    color: #000;
+}
+
+.google-btn {
+    background-color: #4285f4;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 0.5rem;
+    color: #000;
+}
+
+form input[type="email"],
+form input[type="text"] {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    max-width: 30%;
+}
+
+.footer-left p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 0.5rem;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-center h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-center ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-center ul li a {
+    color: #9acd32;
+    text-decoration: none;
+}
+
+.footer-right h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.footer-right p {
+    color: #ccc;
+}
+
+.footer-right button {
+    margin-top: 1rem;
+}
+
+
+/* Gallery Styles */
+.galeria {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.galeria h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-table th {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.product-table td {
+    padding: 10px;
+    text-align: center;
+ 
+}
+
+.product-table td img {
+    max-width: 40%;
+    height: fit-content;
+    display: flex;
+    margin: auto;
+    border: 20px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Tabla Styles */
+.tabla01 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.estilotabla {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.estilotabla th, .estilotabla td {
+    border: 1px solid #9acd32;
+    padding: 20px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.estilotabla th {
+    background-color: #9acd32;
+
+    color: #fff;
+}
+
+.estilotabla tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.estilotabla tr:hover {
+    background-color: #f1f1f1;
+}
+
+.google-btn {
+    background-color: hsl(106, 67%, 41%);
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 10px; /* Especifica el valor de border-radius correctamente */
+    display: flex;
+    align-items: center;
+}
+
+.google-btn img {
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+/* Reglas básicas de CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ... (todos los estilos actuales) ... */
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .contact-info, .contact-form {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-table td img {
+        max-width: 80%;
+    }
+}
